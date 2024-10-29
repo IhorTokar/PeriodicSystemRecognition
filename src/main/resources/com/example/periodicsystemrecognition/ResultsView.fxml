@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Scene?>
+<?import javafx.stage.Stage?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.periodicsystemrecognition.ResultsController">
+    <children>
+        <TableView fx:id="resultsTable" prefWidth="480.0" prefHeight="300.0">
+            <columns>
+                <TableColumn fx:id="iterationColumn" text="Iteration" />
+                <TableColumn fx:id="nextXColumn" text="Next X" />
+                <TableColumn fx:id="nextVColumn" text="Next V" />
+                <TableColumn fx:id="jacobianColumn" text="Jacobian" />
+            </columns>
+        </TableView>
+        <Button text="Close" layoutY="310.0" onAction="#closeWindow"/>
+    </children>
+</AnchorPane>
